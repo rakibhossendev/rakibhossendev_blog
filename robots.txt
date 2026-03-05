@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rakibhossendev.netlify.app/sitemap.xml

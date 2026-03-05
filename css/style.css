@@ -1,0 +1,84 @@
+/* Custom minimal styles on top of Bootstrap */
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  color: #1e293b;
+  background-color: #ffffff;
+  line-height: 1.7;
+}
+
+/* Improve heading readability */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Blog post content styling */
+#article-content h2 {
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+#article-content h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+#article-content p {
+  margin-bottom: 1.5rem;
+}
+#article-content ul, #article-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+#article-content li {
+  margin-bottom: 0.25rem;
+}
+#article-content hr {
+  margin: 2.5rem 0;
+  opacity: 0.25;
+}
+
+/* Table of Contents */
+#toc-list {
+  padding-left: 0;
+}
+#toc-list li {
+  margin-bottom: 0.5rem;
+}
+#toc-list a {
+  text-decoration: none;
+  color: #2563eb;
+  border-bottom: 1px dotted #b0d0ff;
+}
+#toc-list a:hover {
+  border-bottom: 1px solid #2563eb;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Ensure sufficient contrast */
+.text-secondary {
+  color: #475569 !important;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
